@@ -10,4 +10,12 @@ public class Card {
         this.value = value;
         this.color = color;
     }
+
+    public Value getValue() {
+        return value;
+    }
+
+    public Color getColor() {
+        return color;
+    }
 }

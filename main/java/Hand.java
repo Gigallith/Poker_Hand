@@ -10,4 +10,13 @@ public class Hand {
     public Hand(List<Card> hand) {
         this.hand = hand;
     }
+
+    public Card findMax() {
+        Card max = this.hand.get(1);
+        for (Card i : this.hand) {
+            if (i.getValue().ordinal() > max.getValue().ordinal())
+                max = i;
+        }
+        return max;
+    }
 }
