@@ -5,15 +5,15 @@ import java.util.List;
  */
 public class Hand {
 
-    List<Card> hand;
+    List<Card> listCards;
 
-    public Hand(List<Card> hand) {
-        this.hand = hand;
+    public Hand(List<Card> listCards) {
+        this.listCards = listCards;
     }
 
     public Card findMax() {
-        Card max = this.hand.get(1);
-        for (Card i : this.hand) {
+        Card max = this.listCards.get(0);
+        for (Card i : this.listCards) {
             if (i.getValue().ordinal() > max.getValue().ordinal())
                 max = i;
         }
