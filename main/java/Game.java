@@ -15,15 +15,18 @@ public class Game {
 
     private Hand higherCard() {
         int score1 = this.hand1.findMax().getValue().ordinal();
-        //System.out.println(score1);
         int score2 = this.hand2.findMax().getValue().ordinal();
-        //System.out.println(score2);
         if (score1 > score2)
             return hand1;
         else if (score1 < score2)
             return hand2;
         else
             return null;
+    }
+
+    private Hand findPaire() {
+        //Trier la main pour trouver les paires facilement?
+        return null;
     }
 
     public void findWinner() {
